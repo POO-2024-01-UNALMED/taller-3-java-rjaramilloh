@@ -23,8 +23,11 @@ public class TV {
 		return numTV;
 	}
 
-	public static void setNumTV() {
-		TV.numTV = 0;
+	public static void setNumTV(int numTV) {
+		if (numTV == 0) {
+			TV.numTV=numTV;
+		}
+
 	}
 
 	public void turnOn() {
