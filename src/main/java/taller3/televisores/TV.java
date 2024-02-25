@@ -55,8 +55,8 @@ public class TV {
 		}
 	}
 	
-	public void getMarca() {
-		marca.getNombre();
+	public String getMarca() {
+		return marca.getNombre();
 	}
 	
 	public void setMarca(String marca) {
