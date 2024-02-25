@@ -15,10 +15,18 @@ public class TV {
 		this.estado = estado;
 	}
 	
-	public static void numTV() {
+	public static void contadorTV() {
 		numTV++;
 	}
 	
+	public static int getNumTV() {
+		return numTV;
+	}
+
+	public static void setNumTV() {
+		TV.numTV = 0;
+	}
+
 	public void turnOn() {
 		estado=true;
 	}
@@ -55,12 +63,13 @@ public class TV {
 		}
 	}
 	
-	public String getMarca() {
-		return marca.getNombre();
+	public Marca getMarca() {
+		return marca;
 	}
 	
-	public void setMarca(String marca) {
-		this.marca.setNombre(marca);
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+		
 	}
 	public int getCanal() {
 		return canal;
