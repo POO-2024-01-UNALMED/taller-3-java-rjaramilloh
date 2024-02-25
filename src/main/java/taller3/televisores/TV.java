@@ -13,9 +13,6 @@ public class TV {
 	public TV(Marca marca, boolean estado) {
 		this.marca = marca;
 		this.estado = estado;
-	}
-	
-	public static void contadorTV() {
 		numTV++;
 	}
 	
@@ -24,10 +21,7 @@ public class TV {
 	}
 
 	public static void setNumTV(int numTV) {
-		if (numTV == 0) {
-			TV.numTV=numTV;
-		}
-
+		TV.numTV=numTV;
 	}
 
 	public void turnOn() {
