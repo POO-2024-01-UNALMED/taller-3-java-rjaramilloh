@@ -37,7 +37,7 @@ public class TV {
 		}
 	}
 	
-	public void canalDow() {
+	public void canalDown() {
 		if (canal > 1) {
 			canal--;
 		}
@@ -49,18 +49,18 @@ public class TV {
 		}
 	}
 	
-	public void volumenDow() {
+	public void volumenDown() {
 		if (volumen > 0) {
 			volumen--;
 		}
 	}
 	
-	
-	public Marca getMarca() {
-		return marca;
+	public void getMarca() {
+		marca.getNombre();
 	}
-	public void setMarca(Marca marca) {
-		this.marca = marca;
+	
+	public void setMarca(String marca) {
+		this.marca.setNombre(marca);
 	}
 	public int getCanal() {
 		return canal;
